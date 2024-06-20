@@ -7,44 +7,47 @@
     <title>BBQ Side dish Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI BBQ Side Dish Recipes Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI BBQ Side Dish Recipes Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a side dish you want to make"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        <h3>Macaroni Salad</h3>
-        <p>Ingredients:</p>
-        <p>procedure:</p>
-      </div>
-    </main>
-    <footer>
-      This AI project was coded with ❤ by
-      <a href="https://github.com/FatimaBartels" target="_blank"
-        >Fatima Bartels</a
-      >
-      and is open-sourced on
-      <a
-        href="https://github.com/FatimaBartels/bbq-sidedish-recipe-generator"
-        target="_blank"
-        >GitHub</a
-      >, and hosted on
-      <a
-        href="https://ai-bbq-side-dish-recipes-generator.netlify.app/"
-        target="_blank"
-        >Netlify</a
-      >.
-    </footer>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a side dish you want to make"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">
+          <h3>Macaroni Salad</h3>
+          <p>Ingredients:</p>
+          <p>Preparation:</p>
+        </div>
+      </main>
+      <footer>
+        This AI project was coded with ❤ by
+        <a href="https://github.com/FatimaBartels" target="_blank"
+          >Fatima Bartels</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/FatimaBartels/bbq-sidedish-recipe-generator"
+          target="_blank"
+          >GitHub</a
+        >, and hosted on
+        <a
+          href="https://ai-bbq-side-dish-recipes-generator.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
