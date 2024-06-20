@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="stylesheet" href="src/style.css" />
     <title>BBQ Side dish Generator</title>
   </head>
@@ -13,7 +15,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="Enter a side dish you want to make"
@@ -24,11 +26,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe">
-          <h3>Macaroni Salad</h3>
-          <p>Ingredients:</p>
-          <p>Preparation:</p>
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded with ❤ by
