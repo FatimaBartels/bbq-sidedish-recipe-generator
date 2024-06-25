@@ -18,6 +18,10 @@ function generateRecipe(event) {
     "You are a very good cook and love to make the best and simple side dishes. Your mission is to generate a simple and easy to make side dish recipe for barbecue in HTML format. Make sure to follow the user instructions.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="generating">⏳Generating a BBQ ${instructionsInput.value} Side Dish Recipe for you... </div>`;
+
   console.log("Generating recipe");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);

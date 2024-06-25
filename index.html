@@ -22,19 +22,22 @@
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter a side dish you want to make"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a side dish you want to make"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e Pasta, Vegetables, Chicken or Tofu...</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI project was coded with ❤ by
