@@ -15,7 +15,7 @@ function generateRecipe(event) {
   let apiKey = "f80c43e79144055afb51f7885ft48o7e";
   let prompt = `User instructions: Generate a barbecue side dish recipe about ${instructionsInput.value}`;
   let context =
-    "You are a very good cook and love to make the best and simple side dishes. Your mission is to generate a simple and easy to make side dish recipe for barbecue. Make sure to follow the user instructions.";
+    "You are a very good cook and love to make the best and simple side dishes. Your mission is to generate a simple and easy to make side dish recipe for barbecue in HTML format. Make sure to follow the user instructions.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeElement = document.querySelector("#recipe");
