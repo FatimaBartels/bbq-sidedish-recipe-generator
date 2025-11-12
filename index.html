@@ -3,26 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>BBQ Side dish Generator</title>
+    <title>AI BBQ dish Generator</title>
   </head>
   <body>
-    <button class="theme-button">Change theme</button>
+    
+    <!--<button class="theme-button">Change theme</button>-->
     <div class="container">
       <header>
         <h1>
-          <img src="src/img/chef.png" class="icon-robot" /> AI BBQ Side Dish
-          Recipes Generator
+          <img src="src/img/icon-cooking.png" class="icon-cook" /> SideKick AI
         </h1>
+        <h3>Smartly crafted AI-generated side dish recipes</h3>
       </header>
 
       <main>
@@ -39,7 +37,7 @@
             />
             <input type="submit" class="submit-button" />
           </form>
-          <div class="hint">i.e Pasta, Vegetables, Chicken or Tofu...</div>
+          <div class="hint">i.e Pasta, Vegetables or Chicken...</div>
         </div>
         <div class="recipe hidden" id="recipe"></div>
       </main>
@@ -57,8 +55,7 @@
         <a
           href="https://ai-bbq-side-dish-recipes-generator.netlify.app/"
           target="_blank"
-          >Netlify</a
-        >.
+          >Netlify</a>.
       </footer>
     </div>
 
