@@ -1,5 +1,3 @@
-
-
 // AI with API fallback
 function generateRecipe(event) {
   event.preventDefault();
@@ -11,7 +9,6 @@ function generateRecipe(event) {
   const prompt = `User instructions: Generate a barbecue side dish recipe about ${instructionsInput.value}`;
   const context =
     "You are a very good cook who writes recipes for a web app. Generate a simple and easy-to-make side dish recipe with clear sections: Title, Ingredients (as a bulleted list), and Instructions (as numbered steps). Write it as clean, readable HTML for display in a webpage — do NOT include code blocks, HTML tags explanations, or any text like 'copy this code'. Only return the formatted recipe content.";
-
 
   const apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
@@ -32,12 +29,12 @@ function displayRecipe(response) {
   let recipe = response.data.answer.replace(/```html|```/g, "").trim();
   document.querySelector("#recipe").innerHTML = "";
 
-    new Typewriter("#recipe", {
-      strings: recipe,
-      autoStart: true,
-      delay: 0.5,
-      cursor: null,
-    });
+  new Typewriter("#recipe", {
+    strings: recipe,
+    autoStart: true,
+    delay: 0.5,
+    cursor: null,
+  });
 }
 
 function getBackupRecipe(query) {
@@ -90,4 +87,3 @@ function getBackupRecipe(query) {
 
 let recipeFormElement = document.querySelector("#recipe-generator-form");
 recipeFormElement.addEventListener("submit", generateRecipe);
-
